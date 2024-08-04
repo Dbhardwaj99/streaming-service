@@ -1,10 +1,12 @@
+// src/app.module.ts
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+// import { ChatModule } from './chat/chat.module';
+// import { WebRTCModule } from './webrtc/webrtc.module';
+import { HandlersModule } from './handlers/handlers.module';
+// import { TurnModule } from './turn/turn.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  // imports: [ChatModule, WebRTCModule, HandlersModule, TurnModule],
+  imports: [HandlersModule],
 })
 export class AppModule {}
