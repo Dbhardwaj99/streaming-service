@@ -12,6 +12,4 @@ export class StreamHandler {
   handleStartStream(@MessageBody() data: any, @ConnectedSocket() client: Socket) {
     // Implement stream start logic
   }
-
-  // Add more stream-related message handlers
 }
